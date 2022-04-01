@@ -1,0 +1,6 @@
+<img
+  *ngFor="let option of options"
+  [src]="option.imageUrl"
+  (click)="imageClicked(option.value)"
+  [class.selected]="option.value === selected"
+/>
